@@ -1,0 +1,32 @@
+Use case: Product Bestellen
+
+Primary actor: Gebruiker
+Stakeholder(s): Werknemers Onderneming
+
+Precondities: producten en hoeveelheden aan winkelmand toegevoegd
+Postcondities: bestelling in systeem geregistreerd
+
+Normaal verloop:
+
+1. Gebruiker vraagt bestelling aan
+2. Systeem valideert bestelling 
+3. Systeem vraagt gewenste levering datum en adres
+4. Gebruik geeft leverings datum en adres
+5. Systeem valideert leverings datum en adres 
+6. Systeem vraagt betaalmethode
+7. Gebruiker geeft betaal informatie
+    7a. ongeldige betaalinformatie
+        7a1. systeem toont melding
+        7a2. systeem tkeert terug naar stap 6
+8. Systeem vraag bevestiging bestelling
+9. Gebruiker bevestigd bestelling 
+10. Systeem registreert bestelling
+
+Alternatieve verlopen:
+
+Domeinspecifieke regels:
+
+- leveringdatum moet mimimuun dag nag bestelling zijn
+- adres moet binnen belgie vallen
+
+Op te klaren punten:

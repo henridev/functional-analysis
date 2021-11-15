@@ -1,0 +1,24 @@
+Use case: Product zoeken
+
+Primary actor: Gebruiker
+Stakeholder(s): Werknemers Onderneming
+
+Precondities: None
+Postcondities: Het systeem geeft atrikel aan gebruiker weer
+
+Normaal verloop:
+
+1. Gebruiker geeft zoekterm in
+2. Systeem vraagt zoekterm op in stock
+3. Systeem retourneert producten voor gevonden zoekterm
+
+Alternatieve verlopen:
+
+2a. ongeldige zoekterm
+    2a1. systeem toont gepaste melding
+    2a2. systeem zend terug naar stap 1
+
+
+Domeinspecifieke regels:
+
+Op te klaren punten:

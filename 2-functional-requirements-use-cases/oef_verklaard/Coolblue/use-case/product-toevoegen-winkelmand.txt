@@ -1,0 +1,24 @@
+Use case: Product toevoegen aan winkelwagen
+
+Primary actor: Gebruiker
+Stakeholder(s): Werknemers Onderneming
+
+Precondities: None
+Postcondities: Het systeem heeft het artikel aan de winkelwagen van de klant toegevoegd
+
+Normaal verloop:
+
+1. Gebruiker selecteert product en hoeveelheid
+2. Systeem verifieert voorraad
+3. Systeem voegt product toe aan winkelwagen
+
+Alternatieve verlopen:
+
+2a. voorraad is ontoereikend
+    2a1. systeem toont gepaste melding
+    2a2. process word afgesloten
+
+
+Domeinspecifieke regels:
+
+Op te klaren punten:

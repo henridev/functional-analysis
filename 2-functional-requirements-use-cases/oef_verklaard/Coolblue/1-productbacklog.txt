@@ -1,0 +1,21 @@
+| priority | Rol       | FR                                       |
+-------------------------------------------------------------------
+| 10       | gebruiker | kan product opzoek                       |
+| 20       | gebruiker | kan product toevoegen aan winkelmandje   |
+| 30       | gebruiker | kan bestelling betalen                   |
+| 40       | gebruiker | kan inloggen                             |
+| 50       | gebruiker | kan registreren                          |
+| 60       | gebruiker | kan uitloggen                            |
+| 70       | gebruiker | kan product toevoegen aan favorieten     |
+| 80       | gebruiker | kan product verwijderen aan favorieten   |
+| 90       | gebruiker | kan product verwijderen aan winkelmandje |
+| 100      | gebruiker | kan wachtwoord aanpassen                 |                     |
+| 110      | gebruiker | kan recensie schrijven                   |
+| 120      | gebruiker | kan taal wijzigen                        |
+| priority | gebruiker | ...                                      |
+| priority | admin     | kan productpagina beheren                |
+
+!priority in tientallen zodat kan gewijzigd worden bij toevoeging FR
+!tot en met 30 is MVP
+!dit is product backlog opgesteld door product owner
+!registreren en inloggen is meestal niet doel dus niet doel van business zelf
