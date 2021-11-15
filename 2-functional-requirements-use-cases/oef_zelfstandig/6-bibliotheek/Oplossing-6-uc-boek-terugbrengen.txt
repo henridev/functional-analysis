@@ -1,0 +1,21 @@
+situering: De actor wenst een boek te retourneren
+Use case: Boek retourneren
+
+Primary actor: bibliotheek lid, bibliothecaris
+Stakeholder(s): /
+
+Precondities: Boeken werd uitgeleend
+Postcondities: Boek is geretourneerd
+
+Normaal verloop:
+
+1. Het systeem vraagt actor, boek gegevens
+2. De actor geeft gegevens
+3. Het systeem valideert gegevens
+
+Alternatieve verlopen:
+
+3a. Actor brengt boek te laat binnen 
+    3a1. systeem berekend boete
+    3a2. actor vergoed boete
+

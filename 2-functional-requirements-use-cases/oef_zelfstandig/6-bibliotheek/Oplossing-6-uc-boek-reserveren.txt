@@ -1,0 +1,33 @@
+situering: De actor wenst een boek te reserveren
+Use case: Boek reserveren
+
+Primary actor: bibliotheek lid, bibliothecaris
+Stakeholder(s): /
+
+Precondities: 
+- Boeken is momenteel niet beschikbaar
+- Actor is lid van bibliotheek
+
+Postcondities: Boek is aan voor actor gereserveerd
+
+Normaal verloop:
+
+1. Het systeem vraagt lid gegevens, boek om uit te reserveren
+2. lid geeft gegevens
+3. Het systeem valideert gegevens
+4. Systeem registreert reservatie
+5. Systeem registreert retour van reservatie
+6. Systeem geeft melding van retour reservatie
+7. bibliothecaris verwijdert reservatie
+
+
+Alternatieve verlopen:
+
+2a. lid te jong
+    2a1. systeem stop process
+2b. lid heeft openstaande boetes, heeft openstaande boeken uitgeleend niet tijdig teruggebracgt
+    2b1. systeem berekend openstaande boetes
+    2b2. actor betaald openstaande boetes
+    2b3. systeem gaat verder met stap 3
+7a. lid haalt reservatie op
+    7a1. Systeem verwijderdt reservatie

@@ -1,0 +1,84 @@
+-------------------------- UC2 - registratie aanbieder ------------------------------
+
+situering: De actor wenst zich als aanbieder te registreren.
+Use case: Registratie aanbieder
+
+Primary actor: Gebruiker (Rol aanbieder)
+Stakeholder(s): /
+
+Precondities:  Actor wil zich registreren
+Postcondities: Gebruiker heeft registratiebevestiging ontvangen
+
+Normaal verloop:
+
+1. Actor kiest optie Aanbieder
+2. Systeem toont registratieformulier 
+3. Actor vult registratieformulier in
+4. Actor dient registratieformulier in
+5. Systeem controleert registratieformulier
+6. Systeem toont registratiebevestiging
+7. Actor ontvangt registratiebevestiging
+8. Actor voltooit registratie
+
+Alternatieve verlopen:
+
+1a. De actor kiest verkeerde optie
+    1a1. Actor kiest juiste optie
+5a. Gegevens zijn niet geldig
+    5a1. Systeem geeft een foutboodschap
+    5a2. Actor past gegevens aan
+
+----- OPLOSSING ----- 
+
+situering: De actor wenst zich als vrager te registreren.
+Use case: Registratie vrager
+
+Primary actor: Gebruiker (Rol Aanbier)
+Stakeholder(s): /
+
+Precondities: Actor wil zich registreren
+- FOUT: dit is verondersteld
+- BETER: weglaten
+Postcondities: Gebruiker heeft registratiebevestiging ontvangen
+- FOUT: use case is al voldaan op moment dat bevestiging ontvangen wordt
+- BETER: Gebruiker is geregistreerd 
+
+Normaal verloop:
+
+1. Actor kiest optie ‘Vrager’
+    - FOUT: kiezen voor deze actie niet nodig want is al verondersteld in use case op zich
+    - BETER: weglaten 
+2. Systeem toont registratieformulier 
+    - FOUT: kiezen voor deze actie niet nodig want is al verondersteld in use case op zich
+    - BETER: Systeem vraagt persoonlijke account informatie
+3. Actor vult registratieformulier in
+    - FOUT: beschrijft hoe ipv wat
+    - BETER: Actor geeft persoonlijke account informatie
+4. Actor dient registratieformulier in
+    - FOUT: specifiek uitdrukken indienen niet nodig
+    - BETER: weglaten 
+5. Systeem controleert registratieformulier
+    - FOUT: validatie ipv controle (vermijden conditionals)
+    - BETER: Syteem validatie registratieformulier
+6. Systeem toont registratiebevestiging
+    - FOUT: beschrijving fysieke stap na slagen use case
+    - FOUT: systeem moet ook nog verzenden
+    - BETER: weglaten 
+    - BETER: Syteem verzend registratie bevestiging
+7. Actor ontvangt registratiebevestiging
+    - FOUT: geen actiestap / geen meerwaarde
+    - FOUT: actor moet registratie bevestigen 
+    - BETER: weglaten 
+    - BETER: actor bevestigd registratie
+
+Alternatieve verlopen:
+
+1a. De actor kiest verkeerde optie
+    1a1. Actor kiest juiste optie
+    - FOUT: weglaten zie punt 1
+
+5a. Gegevens zijn niet geldig
+    5a1. Systeem geeft een foutboodschap
+    5a2. Actor past gegevens aan
+    - FOUT: niet 1 van 4 opties voor stoppen alternatief verloop
+    - BETER: terugkeer naar normaal verloop (stap 2)

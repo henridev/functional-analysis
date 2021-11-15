@@ -1,0 +1,75 @@
+-------------------------- UC2 - registratie aanbieder ------------------------------
+
+situering: De actor wenst zich als aanbieder te registreren.
+Use case: Registratie aanbieder
+
+Primary actor: aanbieder
+Stakeholder(s): /
+
+Precondities: De gebruiker heeft gekozen zich te registreren.
+Postcondities: 
+- Gebruiker heeft registratiebevestiging ontvangen
+- Gebruiker geregistreerd als aanbieder
+
+Normaal verloop:
+
+1. De gebruiker heeft de keuze om zich te registreren als aanbieder of vrager.
+2. De gebruiker kiest om zich te registreren als aanbieder 
+3. De gebruiker vult zijn gegevens in en kiest om zich te registreren:
+=> Bedrijfsnaam-Sector-Bedrijfsgrootte-Naam-E-mailadres-Paswoord
+4. Er wordt gecontroleerd of alle gegevens zijn ingevuld.
+5. Er wordt een mail verstuurd naar het opgegeven e-mailadres In deze mail worden de ingevulde gegevens opgenomen.
+In deze mail wordt ook een link opgenomen waar de gebruiker moet naar surfen om naar het tweede deel van de registratie te gaan
+
+Alternatieve verlopen:
+
+4a. niet alle gegevens ingevukd
+    1a1. Er wordt gemeld dat niet alle gegevens zijn ingevuld en er wordt gevraagd om de ontbrekende gegevens in te vullen.
+
+frequentie: 1 x per gebruiker
+
+----- OPLOSSING ----- 
+
+situering: De actor wenst zich als aanbieder te registreren.
+Use case: Registratie aanbieder
+
+Primary actor: aanbieder
+Stakeholder(s): /
+
+Precondities: De gebruiker heeft gekozen zich te registreren.
+Postcondities: 
+- Gebruiker heeft registratiebevestiging ontvangen
+- Gebruiker geregistreerd als aanbieder
+
+Normaal verloop:
+
+1. De gebruiker heeft de keuze om zich te registreren als aanbieder of vrager.
+- FOUT: verondersteld in naam use case
+- BETER: weglaten
+2. De gebruiker kiest om zich te registreren als aanbieder 
+- FOUT: verondersteld in naam use case
+- BETER: weglaten
+3. De gebruiker vult zijn gegevens in en kiest om zich te registreren:
+=> Bedrijfsnaam-Sector-Bedrijfsgrootte-Naam-E-mailadres-Paswoord
+- FOUT: te specifiek
+- BETER: weglaten specifieke gegevens
+4. Er wordt gecontroleerd of alle gegevens zijn ingevuld.
+- FOUT: validatie ipv controle
+- FOUT: niet specifieren op invullen alleen
+- BETER: validatie registratiegegevens
+5. Er wordt een mail verstuurd naar het opgegeven e-mailadres In deze mail worden de ingevulde gegevens opgenomen.
+In deze mail wordt ook een link opgenomen waar de gebruiker moet naar surfen om naar het tweede deel van de registratie te gaan
+- FOUT: te veel informatie
+- BETER: Systeem zend registratiebevestigingsmail
+- BETER: gebruiker bevestigd registratiebevestigingsmail
+
+Alternatieve verlopen:
+
+4a. niet alle gegevens ingevukd
+    1a1. Er wordt gemeld dat niet alle gegevens zijn ingevuld en er wordt gevraagd om de ontbrekende gegevens in te vullen.
+    - FOUT: incorrect afsluiten alternatief verloop
+    - FOUT: systeem moet foutboodschap tonen
+    - BETER: Systeem toont foutboodschap
+    - BETER: Systeem retourneert naar stap 2
+
+frequentie: 1 x per gebruiker

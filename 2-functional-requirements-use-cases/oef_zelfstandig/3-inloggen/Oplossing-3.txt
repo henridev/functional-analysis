@@ -1,0 +1,28 @@
+Use case: Inloggen Gebruiker
+
+Primary actor: Gebruiker (Rol Aanbier, Rol Vrager)
+Stakeholder(s): Groep
+
+Precondities: Gebruiker beschikt over account
+Postcondities: Gebruiker is aangemeld
+
+Normaal verloop:
+
+1. De klant voert zijn aanmeldgegevens in
+2. Het systeem valideert of login en passwoord overeenstemmen
+3. systeem logt login
+
+Alternatieve verlopen:
+
+2a. ongeldige login gegevens
+    2a1. Systeem toont foutmelding
+    2a2. Systeem logt inlogpoging
+    2a3. Systeem retourneert naar stap 1
+2b. teveel ongeldige login pogingen
+    2b1. Systeem toont foutmelding
+    2b2. Systeem logt inlogpoging
+    2b3. Systeem blokkeert login poging voor account
+
+Domeinspecifieke regels:
+
+- max 3 ongeldige login pogingen per login

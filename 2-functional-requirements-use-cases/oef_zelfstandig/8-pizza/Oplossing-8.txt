@@ -1,0 +1,20 @@
+Primaire actor:  
+Stakeholders:  
+
+Precondities:  
+Postcondities:  
+
+
+Normaal verloop:
+1.De baliemedewerker wenst een item toe te voegen
+2.Het systeem toont een gepaste melding
+
+Alternatieve verlopen:
+XA. Het systeem detecteert een foutief type voor het item
+XA1. 
+
+Domeinspecifieke regels:
+DR_XX Uitleg domeinregel
+
+Op te klaren punten:
+Hier alle info die je nog moet hebben

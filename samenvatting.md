@@ -251,19 +251,6 @@ Voorbeeld 1 Use Case met alternatief verloop
 ```
 
 ```
-Voorbeeld 2 Use Case
-
-UC: Verwerk order
-1. gebruiker logt in
-2. systeem toont functies, gebruiker selecteert en voert uit
-	- plaats order
-	- annuleer order
-	- zend catalogus
-3. herhaal tot gebruiker exit kiest
-4. systeem logt gebruiker uit
-```
-
-```
 Voorbeeld 3 UC fouten
 
 ---

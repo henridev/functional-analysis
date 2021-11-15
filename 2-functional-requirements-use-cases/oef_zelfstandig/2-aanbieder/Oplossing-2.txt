@@ -1,0 +1,25 @@
+Use case: Registratie Aanbier Gebruiker
+
+Primary actor: Gebruiker (Rol Aanbier)
+Stakeholder(s): Groep
+
+Precondities: -
+Postcondities: registratie van Aanbier gebruiker
+
+Normaal verloop:
+
+1. Gebruiker geeft selecteert Aanbier type registratie in
+2. Systeem vraagt persoonlijke account informatie
+3. Gebruik geeft persoonlijke account informatie
+4. Systeem valideert persoonlijke account informatie
+5. Systeem verstuurd bevestigingsmail
+6. Systeem toont een melding verzending bevestigingsmail
+7. Gebruiker bevestigd registratie
+8. Systeem registreet Aanbier gebruiker
+
+Alternatieve verlopen:
+
+4a. ongeldige persoonlijke account informatie
+    4a1. Systeem retourneert naar stap 2
+7a. tijdslimiet voor bevestiging verstreken
+    7a1. Systeem verwijderd lopende registratie

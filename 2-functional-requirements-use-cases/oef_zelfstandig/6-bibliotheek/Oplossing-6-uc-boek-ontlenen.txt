@@ -1,0 +1,27 @@
+situering: De actor wenst een boek te ontlenen
+Use case: Boek ontlenen
+
+Primary actor: bibliotheek lid
+Stakeholder(s): /
+
+Precondities: 
+- Boeken werd uitgeleend
+Postcondities: Boek is aan actor uitgeleend
+
+Normaal verloop:
+
+1. Het systeem vraagt actor gegevens, boek om uit te lenen
+2. De actor geeft gegevens
+3. Het systeem valideert gegevens
+4. Het systeem geeft retourdatum
+5. De Actor ontvangt uitgeleend boek en retourdatum
+
+Alternatieve verlopen:
+
+2a. Actor te jong
+    2a1. systeem stop process
+2b. Actor heeft openstaande boetes, heeft openstaande boeken uitgeleend niet tijdig teruggebracgt
+    2b1. systeem berekend openstaande boetes
+    2b2. actor betaald openstaande boetes
+    2b3. systeem gaat verder met stap 3
+

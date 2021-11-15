@@ -1,0 +1,69 @@
+-------------------------- UC3 - inloggen gebruiker ------------------------------
+
+situering: De actor wenst zich in te loggen
+Use case: inloggen actor
+
+Primary actor: Gebruiker
+Stakeholder(s): /
+
+Precondities: 
+- Actor wil inloggen
+- Actor is geregistreerd
+Postcondities: Actor is ingelogd
+
+Normaal verloop:
+
+1. Het systeem vraagt gebruiker naar login en paswoord
+2. Actor vult login en paswoord in 
+3. Actor selecteert login
+5. Systeem controleert gegevens
+6. Systeem houdt bij wanneer de actor ingelogd is
+7. De actor wordt doorverwezen
+
+Alternatieve verlopen:
+
+3a. De actor geeft foute login/paswoord combinatie
+    3a1. Systeem houdt bij wanneer actor een foutieve combinatie geprobeerd heeft.
+    3a2. Systeem geeft de actor een foutboodschap.
+
+----- OPLOSSING ----- 
+
+situering: De actor wenst zich in te loggen
+Use case: inloggen actor
+
+Primary actor: Gebruiker
+Stakeholder(s): /
+
+Precondities: 
+- Actor wil inloggen
+    - FOUT: Niet nodig want verondersteld
+    - BETER: weglaten
+- Actor is geregistreerd
+Postcondities: Actor is ingelogd
+
+Normaal verloop:
+
+1. Het systeem vraagt gebruiker naar login en paswoord
+    - FOUT: Niet nodig want verondersteld
+    - BETER: weglaten
+2. Actor vult login en paswoord in 
+3. Actor selecteert login
+    - FOUT: te veel detail ui interactie
+    - BETER: weglaten
+5. Systeem controleert gegevens
+    - FOUT: validatie ipv controleren (vermijden conditionals)
+    - BETER: Systeem valideert gegevens
+6. Systeem houdt bij wanneer de actor ingelogd is
+    - BETER: systeem logt login
+7. De actor wordt doorverwezen
+    - FOUT: postconditie al bereikt
+    - BETER: weglaten
+
+Alternatieve verlopen:
+
+3a. De actor geeft foute login/paswoord combinatie
+    3a1. Systeem houdt bij wanneer actor een foutieve combinatie geprobeerd heeft.
+        - BETER: systeem logt login poging
+    3a2. Systeem geeft de actor een foutboodschap.
+        - FOUT: geen geldige afsluiting alternatief verloop
+        - BETER: Systeem retourneert naar stap 1

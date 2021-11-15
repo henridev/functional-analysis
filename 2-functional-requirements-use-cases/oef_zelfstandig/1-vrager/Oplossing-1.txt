@@ -1,0 +1,22 @@
+Use case: Registratie Vrager Gebruiker
+
+Primary actor: Gebruiker (Rol Vrager)
+Stakeholder(s): Groep
+
+Precondities: -
+Postcondities: registratie van vrager gebruiker
+
+Normaal verloop:
+
+1. Systeem vraagt persoonlijke account informatie
+2. Gebruik geeft persoonlijke account informatie
+3. Systeem valideert persoonlijke account informatie
+4. Systeem verstuurd bevestigingsmail
+5. Systeem toont een melding verzending bevestigingsmail
+6. Systeem registreert vrager gebruiker
+
+Alternatieve verlopen:
+
+3a. ongeldige persoonlijke account informatie
+    3a1. Systeem toont foutboodschap
+    3a1. Systeem retourneert naar stap 2

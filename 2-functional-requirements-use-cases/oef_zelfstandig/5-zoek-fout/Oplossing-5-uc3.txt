@@ -1,0 +1,92 @@
+-------------------------- UC3 - inloggen gebruiker ------------------------------
+
+situering: De actor wenst zich als aanbieder te registreren.
+Use case: Registratie aanbieder
+
+Primary actor: aanbieder
+Stakeholder(s): /
+
+Precondities: De gebruiker heeft gekozen om in te loggen.
+Postcondities: 
+- Tonen overzichtspagina
+- Gebruiker ingelogd
+- Er is een regel aan de databank toegevoegd met de inloggegevens.
+
+Normaal verloop:
+
+1. De gebruiker vult de logingegevens in.
+2. De gebruiker kiest om in te loggen.
+3. De gegevens worden gevalideerd
+4. De gebruiker is ingelogd. Er wordt een regel toegevoegd aan de databank die de gegevens bevat van de correcte login.
+5. Er wordt bepaald of de gebruiker, administrator, aanbieder of vrager is.
+6. Er wordt een overzichtspagina getoond op maat van het type gebruiker (gebruiker, administrator of aanbieder).
+
+Alternatieve verlopen:
+
+1a. De gebruiker is nog niet geregistreerd.
+    1a1. De gebruiker kiest om zich te registreren. Zie use-case registreren.
+3a. De gegevens zijn niet correct
+    3a1. Er wordt aan de gebruiker gemeld dat de gegevens niet correct zijn ingevuld. Er wordt een regel toegevoegd aan de databank die de gegevens bevat van de verkeerde login
+
+frequentie: Telkens de gebruiker wil inloggen.
+
+----- OPLOSSING ----- 
+
+
+situering: De actor wenst zich als aanbieder te registreren.
+Use case: Registratie aanbieder
+
+Primary actor: aanbieder
+Stakeholder(s): /
+
+Precondities: De gebruiker heeft gekozen om in te loggen.
+- FOUT: verondersteld in use case
+- BETER: weglaten
+Postcondities: 
+- Tonen overzichtspagina
+- Gebruiker ingelogd
+- Er is een regel aan de databank toegevoegd met de inloggegevens.
+    - FOUT: regel in databank toevoegen te technisch
+    - BETER: weglaten
+    - FOUT: toon overzicht dan is uc vervuld
+    - BETER: weglaten
+
+Normaal verloop:
+
+1. De gebruiker vult de logingegevens in.
+2. De gebruiker kiest om in te loggen.
+    - FOUT: verondersteld
+    - BETER: weglaten
+3. De gegevens worden gevalideerd
+4. De gebruiker is ingelogd. Er wordt een regel toegevoegd aan de databank die de gegevens bevat van de correcte login.
+    - FOUT: te technisch
+    - FOUT: 2 acties 
+    - FOUT: systeem niet vermeld
+    - BETER: systeem logt gebruiker in
+    - BETER: systeem logt login 
+5. Er wordt bepaald of de gebruiker, administrator, aanbieder of vrager is.
+    - FOUT: niet relevant voor UC
+    - BETER: weglaten 
+6. Er wordt een overzichtspagina getoond op maat van het type gebruiker (gebruiker, administrator of aanbieder).
+    - FOUT: niet relevant voor UC
+    - BETER: weglaten 
+
+Alternatieve verlopen:
+
+1a. De gebruiker is nog niet geregistreerd.
+    1a1. De gebruiker kiest om zich te registreren. 
+    1a2. Zie use-case registreren.
+        - FOUT: dit is een preconditie niet alternatief verloop
+        - BETER: weglaten
+3a. De gegevens zijn niet correct
+    3a1. Er wordt aan de gebruiker gemeld dat de gegevens niet correct zijn ingevuld. 
+    3a2. Er wordt een regel toegevoegd aan de databank die de gegevens bevat van de verkeerde login
+        - FOUT: Systeem voert acties uit
+        - FOUT: te technisch
+        - FOUT: invalide afsluitign
+        - BETER: systeem toont foutmelding
+        - BETER: systeem logt login poging
+        - BETER: systeem retourneert naar stap 1
+
+        
+frequentie: Telkens de gebruiker wil inloggen.
