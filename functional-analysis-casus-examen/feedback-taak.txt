@@ -1,0 +1,9 @@
+- altijd ingeven van text als stap in normaal verloop zetten
+- je hebt al een motivatie dan  alternatief verloop motivatie bestaat al 
+- validatie kan altijd fout lopen
+- systeem toont melding ipv retourneert 
+- post vanuit standpunt systeem zetten 
+- zo weinig mogelijk technische zaken 
+- uc en alternatief verloop meer dan 1 stap (+1 stap voor alternatief)
+- uc begint altijd met wenst => primary actor + wenst 
+

@@ -28,13 +28,13 @@ Normaal verloop:
    - BETER: Systeem valideert pincode
 4. Klant kiest voor geldafhaling en geeft bedrag in
    - FOUT: actie zonder vraag systeem
-   - FOUT: kiezen voor deze actie niet nodig want i suse case op zich
+   - FOUT: kiezen voor deze actie niet nodig want is use case op zich
    - BETER: Systeem vraagt gewenste bedrag
    - BETER: Gebruiker geeft gewenste bedrag
 5. Systeem geeft rekeningnr, af te halen bedrag door aan centraal banksysteem
    - FOUT: geef door aan specifiek systeem technisch
    - FOUT: beschrijft hoe ipv wat
-   - FOUT: mist validatei
+   - FOUT: mist validatie
    - BETER: Systeem valideert of saldo toereikend is
    - BETER: Systeem verminderd saldo van gebruiker met gegeven bedrag
 6. Systeem geeft ,via centraal banksysteem, bevestiging samen met het nieuwe saldo

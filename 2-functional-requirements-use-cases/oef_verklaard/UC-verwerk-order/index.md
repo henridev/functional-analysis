@@ -1,7 +1,10 @@
+# UC3 verwerk order
+
 Pas onderstaande use case aan zodat deze voldoet aan de regels
 
 Use case : Verwerk order
 Main succes scenario :
+
 1. Gebruiker logt in
 2. Systeem toont de toegelaten functies, gebruiker selecteert en voert uit
    - Plaats order
@@ -10,11 +13,11 @@ Main succes scenario :
 3. Herhaal tot gebruiker kiest voor exit
 4. Systeem logt gebruiker uit
 
-
---- 
+---
 
 Use case : Verwerk order
 Main succes scenario :
+
 1. Gebruiker logt in
 2. Systeem toont de toegelaten functies, gebruiker selecteert en voert uit
    - Plaats order
@@ -22,7 +25,6 @@ Main succes scenario :
    - Zend catalogus
 3. Herhaal tot gebruiker kiest voor exit
 4. Systeem logt gebruiker uit
-
 
 ---
 
